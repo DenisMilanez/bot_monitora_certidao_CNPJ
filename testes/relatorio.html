@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .entry {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            background-color: #e7f7e7;
+        }
+
+        .entry div {
+            margin-bottom: 10px;
+        }
+
+        .entry div label {
+            font-weight: bold;
+            margin-right: 5px;
+            color: #2b542b;
+        }
+
+        .copy-icon {
+            cursor: pointer;
+            margin-left: 10px;
+            width: 20px;
+            vertical-align: middle;
+        }
+
+        .copied {
+            color: green;
+            margin-left: 10px;
+            display: none;
+            font-weight: bold;
+        }
+
+        .entry div span {
+            padding: 5px 10px;
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            display: inline-block;
+            color: #333;
+        }
+
+        .entry div input {
+            padding: 5px 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 300px;
+            color: #333;
+        }
+
+        h1,
+        h2 {
+            color: #2b542b;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Relatório</h1>
+        <p>Certidões não encontradas ou vencidas</p>
+
+        <div class="section">
+            <h2>Certificado de Regularidade do FGTS - CRF</h2>
+            <div class="entry">
+                <div>
+                    <strong>Drogaria Rosário</strong> <span>DROSARIO</span>
+                </div>
+                <div>
+                    <label>CNPJ:</label>
+                    <input type="text" id="cnpj1" value="00447821000170" readonly>
+                    <img src="copy-icon.png" class="copy-icon" onclick="copyToClipboard('cnpj1')" alt="Copy">
+                    <span id="copied-cnpj1" class="copied">Copiado!</span>
+                </div>
+                <div>
+                    <label>NOME:</label>
+                    <input type="text" id="nome1" value="DROGARIA ROSARIO SA" readonly>
+                    <img src="copy-icon.png" class="copy-icon" onclick="copyToClipboard('nome1')" alt="Copy">
+                    <span id="copied-nome1" class="copied">Copiado!</span>
+                </div>
+                <div>
+                    <label>SALVAR:</label>
+                    <input type="text" id="salvar1" value="C:\clientes\drosario\CR FGTS" readonly>
+                    <img src="copy-icon.png" class="copy-icon" onclick="copyToClipboard('salvar1')" alt="Copy">
+                    <span id="copied-salvar1" class="copied">Copiado!</span>
+                </div>
+            </div>
+            <div class="entry">
+                <div>
+                    <strong>Big Box</strong> <span>BIGBOX</span>
+                </div>
+                <div>
+                    <label>CNPJ:</label>
+                    <input type="text" id="cnpj2" value="03698689000100" readonly>
+                    <img src="copy-icon.png" class="copy-icon" onclick="copyToClipboard('cnpj2')" alt="Copy">
+                    <span id="copied-cnpj2" class="copied">Copiado!</span>
+                </div>
+                <div>
+                    <label>NOME:</label>
+                    <input type="text" id="nome2" value="Big Trans Comercial de Alimentos SA" readonly>
+                    <img src="copy-icon.png" class="copy-icon" onclick="copyToClipboard('nome2')" alt="Copy">
+                    <span id="copied-nome2" class="copied">Copiado!</span>
+                </div>
+                <div>
+                    <label>SALVAR:</label>
+                    <input type="text" id="salvar2" value="C:\clientes\bigbox\CR FGTS" readonly>
+                    <img src="copy-icon.png" class="copy-icon" onclick="copyToClipboard('salvar2')" alt="Copy">
+                    <span id="copied-salvar2" class="copied">Copiado!</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Certidão Negativa de Débitos - GDF</h2>
+            <div class="entry">
+                <div>
+                    <strong>Auto LTDA</strong> <span>AUTOLTDA</span>
+                </div>
+                <div>
+                    <label>CNPJ:</label>
+                    <input type="text" id="cnpj3" value="2210203040" readonly>
+                    <img src="copy-icon.png" class="copy-icon" onclick="copyToClipboard('cnpj3')" alt="Copy">
+                    <span id="copied-cnpj3" class="copied">Copiado!</span>
+                </div>
+                <div>
+                    <label>SALVAR:</label>
+                    <input type="text" id="salvar3" value="C:\clientes\autoltda\CND GDF" readonly>
+                    <img src="copy-icon.png" class="copy-icon" onclick="copyToClipboard('salvar3')" alt="Copy">
+                    <span id="copied-salvar3" class="copied">Copiado!</span>
+                </div>
+            </div>
+            <div class="entry">
+                <div>
+                    <strong>Drogaria Rosário</strong> <span>DROSARIO</span>
+                </div>
+                <div>
+                    <label>CNPJ:</label>
+                    <input type="text" id="cnpj4" value="00447821000170" readonly>
+                    <img src="copy-icon.png" class="copy-icon" onclick="copyToClipboard('cnpj4')" alt="Copy">
+                    <span id="copied-cnpj4" class="copied">Copiado!</span>
+                </div>
+                <div>
+                    <label>NOME:</label>
+                    <input type="text" id="nome4" value="DROGARIA ROSARIO SA" readonly>
+                    <img src="copy-icon.png" class="copy-icon" onclick="copyToClipboard('nome4')" alt="Copy">
+                    <span id="copied-nome4" class="copied">Copiado!</span>
+                </div>
+                <div>
+                    <label>SALVAR:</label>
+                    <input type="text" id="salvar4" value="C:\clientes\drosario\CND GDF" readonly>
+                    <img src="copy-icon.png" class="copy-icon" onclick="copyToClipboard('salvar4')" alt="Copy">
+                    <span id="copied-salvar4" class="copied">Copiado!</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function copyToClipboard(elementId) {
+            var copyText = document.getElementById(elementId);
+            copyText.select();
+            document.execCommand("copy");
+
+            // Mostrar mensagem "Copiado!" temporariamente
+            var copiedMessage = document.getElementById('copied-' + elementId);
+            copiedMessage.style.display = 'inline';
+            setTimeout(function () {
+                copiedMessage.style.display = 'none';
+            }, 2000); // A mensagem desaparece após 2 segundos
+        }
+    </script>
+</body>
+
+</html>
