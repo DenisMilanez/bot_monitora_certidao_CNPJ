@@ -1,0 +1,27 @@
+codigo:
+erro:
+mensagem:
+dados:
+
+PENSAR EM ERRO FATAL PARA CADA EXCEPT das funções /////todo
+-------------
+codigo
+
+---- Erro ao criar lista cliente 1:! certidao | def certidoes_clientes_ativo(df_clientes, df_cert_config):
+CC11-A
+erro: Erro nos dados em config_bot.xlsx
+mensagem: Verifique a relação entre as colunas 'CERTIDAO_ID' e a lista 'CERTIDOES_CADASTRADAS'.
+
+CC11-B
+erro: Erro ao gerar relação cliente x certidao
+mensagem: Preencha corretamente as planilhas cert_config e cert_clientes do arquivo config_bot.xlsx.
+
+CC11-E
+erro: Erro desconhecido ao gerar relação cliente x certidao
+mensagem: Erro: {e}
+
+---- Erro ao verificar existencia de arquivo | def verificar_existencia_arquivos(dataframe):
+VERIARQ-A
+erro: 'Diretório não encontrado'
+mensagem: f'Cliente: {row["CLIENTE_ID"]}. Diretório {row["PASTA_DESTINO"]} inexistente'
+
